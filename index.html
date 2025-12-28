@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Modern</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+    <div class="nav-logo">MyPortfolio</div>
+    <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Project</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+</nav>
+    
+    <!-- Header -->
+    <header id="home" class="header home">
+    <div class="home-content">
+        <h1>Hii, Saya <span>Azzura Agustina</span></h1>
+        <p>Mahasiswa Universitas Pamulang dengan Prodi Sistem Informasi,
+            saya membuat website portofolio untuk Ujian Akhir Semester.
+        </p>
+        <button id="scrollBtn">Lihat Project</button>
+    </div>
+
+    <div class="home-image">
+        <img src="WhatsApp Image 2025-12-12 at 14.49.03.jpeg" alt="Foto Profil">
+    </div>
+</header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <h2>Tentang Saya</h2>
+        <p>
+            Saya sangat tertarik dengan ICT Business karena bidang ini tidak ada
+            matinya dan punya prospek masa depan yang jelas. Selain karena peluang
+            karier dan penghasilannya yang menjanjikan, saya senang melihat bagaimana
+            teknologi bisa jadi solusi praktis untuk mempermudah hidup orang banyak 
+            dan bikin kerjaan jadi lebih efisien.
+        </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+    <h2>Project</h2>
+    <div class="project-grid">
+
+        <div class="project-card">
+            <img src="Screenshot 2025-12-26 132529.png" alt="Project 1">
+            <div class="project-content">
+                <h3>Mockup Portal News</h3>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="Screenshot 2025-12-17 201845.png" alt="Project 2">
+            <div class="project-content">
+                <h3>Hitung Total Belanja</h3>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="Screenshot 2025-10-16 155233.png" alt="Project 3">
+            <div class="project-content">
+                <h3>Halaman Web Sederhana</h3>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!--Gallery-->
+    <div class="tabs">
+  <button class="tab active" onclick="showGallery('foto')">Foto</button>
+  <button class="tab" onclick="showGallery('video')">Video</button>
+  <button class="tab" onclick="showGallery('audio')">Audio</button>
+</div>
+
+<!-- FOTO -->
+<div id="foto" class="gallery active">
+  <img src="WhatsApp Image 2025-12-26 at 17.01.22 (2) (1).jpeg" alt="Foto 1">
+</div>
+
+<!-- VIDEO -->
+<div id="video" class="gallery">
+  <video controls>
+    <source src="WhatsApp Video 2025-12-26 at 17.07.47.mp4" type="video/mp4">
+  </video>
+</div>
+
+<!-- AUDIO -->
+<div id="audio" class="gallery">
+  <audio controls>
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Kontak</h2>
+        <p>Email: <span id="email">azzuraagustina@gmail.com</span></p>
+        <button id="copyBtn">Copy Email</button>
+    </section>
+
+    <footer>
+        <p>© 2025 Azzura Agustina</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
